@@ -1,8 +1,12 @@
+from program import Program
 
 class MainMenu:
 
+
+
     def __init__(self):
-        pass
+
+        self.myProgram = Program()
 
     def startMenu(self):
 
@@ -18,7 +22,8 @@ class MainMenu:
 
             match answer.lower():
                 case "1":
-                    print("Insert new matrix")
+                    print("Insert a new 3 x 3 matrix A")
+                    self.myProgram.readMatrixA()
 
                 case "2":
                     print("Calculate eigenvectors and matrices")
@@ -31,7 +36,7 @@ class MainMenu:
 
                 case "q":
                     run = False
-                    print("Quiting program!")
+                    print("Quitting program!")
 
                 case _:
-                    print(f"Du skrev in '{answer}'\nDu måste välja 1, 2, 3, 4 eller Q!")
+                    print(f"You wrote '{answer}'\nYou need to choose one of 1, 2, 3, 4 or Q!")

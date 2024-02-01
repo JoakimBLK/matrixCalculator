@@ -1,4 +1,6 @@
 from program import Program
+from mainmenu import MainMenu
 
 newProgram = Program()
-newProgram.start()
+newMainMenu = MainMenu()
+newMainMenu.startMenu()
