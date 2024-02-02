@@ -14,29 +14,38 @@ class MainMenu:
         while run:
             answer = input(f"\nMain menu\n"
                            "\n1. Insert a new 3 x 3 matrix A"
-                           "\n2. Calculate eigenvectors and matrices"
-                           "\n3. Calculate A^n"
-                           "\n4. Calculate exp(A)"
+                           "\n2. Calculate eigenvectors and eigenvalues"
+                           "\n3. Show the matrix A on screen"
+                           "\n4. Calculate the determinant of A"
+                           "\n5. Calculate A^n"
+                           "\n6. Calculate exp(A)"
                            "\nQ. Quit program"
                            "\n\n-> ").strip()
 
             match answer.lower():
                 case "1":
-                    print("Insert a new 3 x 3 matrix A")
+                    print("\nInsert a new 3 x 3 matrix A")
                     self.myProgram.readMatrixA()
 
                 case "2":
-                    print("Calculate eigenvectors and matrices")
+                    print("\nCalculate eigenvectors and eigenvalues")
 
                 case "3":
-                    print("Calculate A^n")
+                    print("\nShow the matrix A on screen")
+                    print(self.myProgram.A)
 
                 case "4":
-                    print("Calculate exp(A)")
+                    print("\nCalculate the determinant of A")
+
+                case "5":
+                    print("\nCalculate A^n")
+
+                case "6":
+                    print("\nCalculate exp(A)")
 
                 case "q":
                     run = False
-                    print("Quitting program!")
+                    print("\nQuitting program!")
 
                 case _:
-                    print(f"You wrote '{answer}'\nYou need to choose one of 1, 2, 3, 4 or Q!")
+                    print(f"\nYou wrote '{answer}'\nYou need to choose one of 1, 2, 3, 4 or Q!")
