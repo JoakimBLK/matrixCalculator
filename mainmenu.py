@@ -12,8 +12,8 @@ class MainMenu:
     # "objects" (methods and variables) in the class.
     def __init__(self):
 
-        # An instance of the Program class is created. The constructor
-        # for the Program class will be called.
+        # An instance ("self.myProgram") of the Program class is created. The
+        # constructor for the Program class will be called.
         self.myProgram = Program()
 
     # The "startMenu(self)" method in the MainMenu class. Here the menu of
@@ -102,7 +102,7 @@ class MainMenu:
 
                 # Choice "6" in "answer". The "self.myProgram.calcExpAAndPrint()" method
                 # in the Program class calculates exp(A) to the matrix A.
-                # The Caylay Hamilton method in mathematics is used.
+                # The Cayley Hamilton method in mathematics is used.
                 # The matrix exp(A) is calculated and printed to the screen.
                 case "6":
                     print("\nCalculate exp(A)")
