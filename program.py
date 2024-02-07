@@ -143,7 +143,7 @@ class Program:
         print(f"\nThe matrix A1 is given by:\n\n")
         print(self.A)
 
-        # Make A = A.T * A a symmetric matrix.
+        # Make A = A1.T * A1 a symmetric matrix.
         self.A = self.A.T @ self.A
 
         # Print the A matrix.
@@ -275,6 +275,8 @@ class Program:
 
         # Check if all three eigenvalues are the same. Create corresponding
         # matrix B (to the equations). Using the Cayley Hamilton method. Create B.
+        # Note that abs(v[1]-v[0]) takes the absolute value of the difference v[1]-v[0]
+        # which should be less or equal to eps, that is set above for all differences.
         if abs(v[1]-v[0]) <= eps and abs(v[2]-v[1]) <= eps:
             B = np.array([[1, v[0], v[0]*v[0]],
                           [0, 1, 2*v[0]],

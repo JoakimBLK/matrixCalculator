@@ -43,4 +43,4 @@ The program allows a certain amount of user mistakes. Such as wrong inputs or so
 goes wrong with reading or writing to a file, when the matrix A is saved or stored.
 More fail safes could be used in the program. A better algoritm when comparing
 eigenvalues when exp(A) is calculated then abs(lambda_i-lambda_j) >= eps could be used.
-To catch more user / program errors (with try ... except [className]) could be used.
+To catch more user / program errors (with try ... except [className]) could be used. 
