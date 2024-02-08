@@ -309,7 +309,7 @@ class Program:
                          [1, v[1], v[1] * v[1]],
                          [1, v[2], v[2] * v[2]]])
 
-        # B * ci = g => ci = inv(B) * g och
+        # B * ci = g => ci = inv(B) * g and
         # f(A) = exp(A) = p(A) = c0 * I + c1 * A + c2 * A * A.
 
         # Solve for the coefficients in ci.
